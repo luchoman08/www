@@ -1,0 +1,36 @@
+{% load sass_tags %}
+{% load i18n %}
+{% language 'en' %}
+{% get_current_language as LANGUAGE_CODE %}
+<!-- Current language:  -->
+{% trans "Codigo de lenguaje actual" %}: {{ LANGUAGE_CODE }}
+<link rel="stylesheet" type="text/css" href="{% sass_src 'css/principal.scss' %}" />
+{% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+        <li><a  href="{%url 'results' question.id %}">{{ question.question_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+
+<button>{% trans  "hola mundo" %}!</button>
+{% endlanguage %}
+<h1> --------------------- </h1>
+{% get_current_language as LANGUAGE_CODE %}
+<!-- Current language:  -->
+{% trans "Codigo de lenguaje actual" %}: {{ LANGUAGE_CODE }}
+{% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+        <li><a  href="{%url 'results' question.id %}">{{ question.question_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+
+<button>{% trans  "hola mundo" %}!</button>
+
+

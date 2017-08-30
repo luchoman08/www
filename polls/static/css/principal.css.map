@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "../../home/ec2-user/www/polls/static/css/principal.css",
+	"sources": [
+		"../../home/ec2-user/www/polls/static/css/principal.scss"
+	],
+	"names": [],
+	"mappings": "AAGA,AAAA,CAAC,CAAC;EACA,IAAI,EAAE,IAAI,CAJI,SAAS,EAAE,UAAU;EAKnC,KAAK,EAJS,IAAI,GAKnB"
+}
