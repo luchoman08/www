@@ -90,13 +90,7 @@ COMPRESS_ROOT = 'polls/static/'
 #}
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'www',
-        'USER': 'django',
-        'PASSWORD': 'CXvuWxrTD77HVx7b',
-        'HOST': 'localhost',
-    }
+    'default': database.config()
 }
 
 # Password validation
