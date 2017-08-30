@@ -1,5 +1,2 @@
  Django
  psycopg2
- libsass
- django-compressor
- django-sass-processor
