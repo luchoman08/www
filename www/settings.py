@@ -88,7 +88,7 @@ COMPRESS_ROOT = 'polls/static/'
 #        'PORT': '5432',
 #    }
 #}
-from . import database
+import database
 DATABASES = {
     'default': database.config()
 }
