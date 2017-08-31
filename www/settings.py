@@ -82,19 +82,15 @@ COMPRESS_ROOT = 'polls/static/'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.postgresql',
-#        'NAME': 'www',
-#        'USER': 'www',
-#        'PASSWORD': 'www',
-#        'HOST': 'db',
-#        'PORT': '5432',
-#    }
-#}
-from . import database
 DATABASES = {
-    'default': database.config()
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dasbspue7ce4fo',
+        'USER': 'bmyiqnpsthbdyd',
+        'PASSWORD': '98d52534d46be0489929cb470cfc7d35db0c34cb6c17cb7699e765ffb9f3c752',
+        'HOST': 'ec2-54-163-233-201.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }
 }
 
 # Password validation
@@ -134,6 +130,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/static/'
 ALLOWED_HOSTS = ['ec2-54-149-237-227.us-west-2.compute.amazonaws.com',]
 #Carpeta donde se guardaran los archivos de traduccion
 LOCALE_PATHS = [
