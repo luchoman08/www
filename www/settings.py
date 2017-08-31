@@ -14,7 +14,7 @@ import os
 
 from django.conf import settings
 
-
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -135,12 +135,12 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
-
+WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
 )
-ALLOWED_HOSTS = ['ec2-54-149-237-227.us-west-2.compute.amazonaws.com',]
+ALLOWED_HOSTS = ['*']
 #Carpeta donde se guardaran los archivos de traduccion
 LOCALE_PATHS = [
     'locale',
