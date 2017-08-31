@@ -1,3 +1,5 @@
+import os
+
 engines = {
     'sqlite': 'django.db.backends.sqlite3',
     'postgresql': 'django.db.backends.postgresql_psycopg2',
