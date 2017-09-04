@@ -84,10 +84,10 @@ COMPRESS_ROOT = 'polls/static/'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dasbspue7ce4fo',
-        'USER': 'bmyiqnpsthbdyd',
-        'PASSWORD': '98d52534d46be0489929cb470cfc7d35db0c34cb6c17cb7699e765ffb9f3c752',
-        'HOST': 'ec2-54-163-233-201.compute-1.amazonaws.com',
+        'NAME': 'docker',
+        'USER': 'docker',
+        'PASSWORD': 'docker',
+        'HOST': 'db',
         'PORT': '5432',
     }
 }

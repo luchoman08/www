@@ -1,1 +1,10 @@
 *.pyc
+Dockerfile
+docker-compose.yml
+www/settings.py
+dockerPostgres
+www/bin
+www/lib
+www/lib64
+wsgi.py
+

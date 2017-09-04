@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-
+from django.utils.translation import ugettext as _
 from django.db import models
 
 
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
-    pub_date = models.DateTimeField('date published')
+    pub_date = models.DateTimeField(_('Fecha publicada'))
 
 
 class Choice(models.Model):

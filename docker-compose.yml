@@ -2,13 +2,18 @@ version: "2"
 services:
   db:
     image: postgres:9.5 
+    build: dockerPostgres
+    environment:
+            POSTGRES_PASSWORD: docker
+            POSTGRES_DB: docker
+            POSTGRES_USER: postgres
   web:
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command:  python manage.py runserver 127.0.0.1:8000
     ports:
-      - "8000:800"
+      - "8000:8000"
     depends_on:
       - db
     volumes:
-      - /home/ec2-user/www/:/webApps
+      - /home/lucho/WebApps/www:/webApps
 
