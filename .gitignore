@@ -7,4 +7,5 @@ www/bin
 www/lib
 www/lib64
 wsgi.py
+Procfile
 
