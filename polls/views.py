@@ -5,6 +5,19 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Question
 from django.template import loader
+""""
+Define un ejemplo en el que se renderiza una lista de productos
+""""
+def ejemplo(request):
+    template = loader.get_template('polls/ejemplo.html')
+    alerts=[]
+    for i in range (0,22):
+        alerts.append('Agotado. Quitar de la lista producto ' + str(i) + '?')
+    context ={
+        'alerts': alerts,
+        'panel_title': 'Reloj',
+    }
+    return HttpResponse(template.render(context, request)) 
 
 def index(request):
     latest_question_list = Question.objects.order_by('-pub_date')[:5]

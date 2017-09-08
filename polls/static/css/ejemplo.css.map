@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "../../webApps/polls/static/css/ejemplo.css",
+	"sources": [
+		"../../webApps/polls/static/css/ejemplo.scss",
+		"../../webApps/polls/static/css/principal.scss"
+	],
+	"names": [],
+	"mappings": "ACGA,AAAA,CAAC,CAAC;EACA,IAAI,EAAE,IAAI,CAJI,SAAS,EAAE,UAAU;EAKnC,KAAK,EAJS,IAAI,GAKnB;;ADLD,AAAA,WAAW,CAAC;EACR,aAAa,EAAE,IAAI,GAEtB"
+}
