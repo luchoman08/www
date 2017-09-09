@@ -1,6 +1,6 @@
 *.pyc
-*/*.pyc
-/*.pyc
+polls/*.pyc
+www/*.pyc
 Dockerfile
 docker-compose.yml
 www/settings.py
