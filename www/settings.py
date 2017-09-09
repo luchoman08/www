@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'polls.apps.PollsConfig',
     'django.contrib.admin',
     'sass_processor',
+    'rest_framework',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
