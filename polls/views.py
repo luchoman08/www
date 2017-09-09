@@ -5,9 +5,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Question
 from django.template import loader
-""""
-Define un ejemplo en el que se renderiza una lista de productos
-""""
 def ejemplo(request):
     template = loader.get_template('polls/ejemplo.html')
     alerts=[]
